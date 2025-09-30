@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MiniModa</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="carrinho.html">Carrinho</a>
+      <a href="login.html">Login</a>
+      <a href="cadastro.html">Cadastra-se</a>
+      <a href="pagUsuario.html">Seu perfil</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Login</h2>
+    <form onsubmit="validarLogin(event)">
+        <label>Email:</label>
+        <input id="login-email" type="email" required>
+        <label>Senha:</label>
+        <input id="login-senha" type="password" required>
+        <button type="submit" class="btn">Entrar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>MiniModa • Loja de roupas infantis — 2025</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

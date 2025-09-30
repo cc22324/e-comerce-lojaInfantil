@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Produto - MiniModa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MiniModa</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="carrinho.html">Carrinho</a>
+      <a href="login.html">Login</a>
+      <a href="cadastro.html">Cadastra-se</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="pagUsuario.html">Seu perfil</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="produto-detalhe">
+      <img id="produto-img" class="produto-img" alt="Imagem do produto">
+
+      <div class="produto-info">
+        <h2 id="produto-nome"></h2>
+        <p id="produto-descricao" class="descricao"></p>
+        <p><strong>Preço:</strong> <span id="produto-preco"></span></p>
+
+        <label for="tamanho"><strong>Tamanhos disponíveis:</strong></label>
+        <select id="tamanho"></select>
+
+        <p><strong>Formas de pagamento:</strong></p>
+        <ul id="produto-pagamento"></ul>
+
+        <p><strong>Tempo de entrega:</strong> <span id="produto-entrega"></span></p>
+        <p><strong>Entrega expressa:</strong> <span id="produto-expressa"></span></p>
+
+        <button class="btn" onclick="adicionarAoCarrinho()">Adicionar ao carrinho</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>MiniModa • Loja de roupas infantis — 2025</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

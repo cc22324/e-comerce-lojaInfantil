@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MiniModa</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="carrinho.html">Carrinho</a>
+      <a href="login.html">Login</a>
+      <a href="cadastro.html">Cadastra-se</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="pagUsuario.html">Seu perfil</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Cadastro</h2>
+    <form onsubmit="validarCadastro(event)">
+        <label>Nome:</label>
+        <input id="cadastro-nome" type="text" required>
+        <label>Email:</label>
+        <input id="cadastro-email" type="email" required>
+        <label>Senha:</label>
+        <input id="cadastro-senha" type="password" required>
+        <button type="submit" class="btn">Cadastrar</button>
+    </form>
+
+  </main>
+
+  <footer>
+    <p>MiniModa • Loja de roupas infantis — 2025</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
