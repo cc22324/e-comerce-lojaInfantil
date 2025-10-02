@@ -175,8 +175,9 @@ app.delete("/Produtos/:id", async (req, res) => {
 
 // ======================== ROTA PRINCIPAL ========================
 app.use("/", (req, res) => {
-  res.json({ mensagem: "Servidor em execução 🚀" });
+  res.json({ mensagem: "Servidor em execução " });
 });
 
-// iniciar servidor
-app.listen(porta, () => console.log(`✅ API funcionando na porta ${porta}`));
+
+app.listen(porta, () => console.log(` API funcionando na porta ${porta}`));
+
