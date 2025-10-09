@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Administrativo - Loja Infantil</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Painel Administrativo</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="carrinho.html">Carrinho</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="pagUsuario.html">Seu perfil</a>
+      <a href="login.html">Login</a>
+      <a href="cadastro.html">Cadastra-se</a>
+      <a href="painelAdm.html">Painel Administrativo</a>
+    </nav>
+  </header>
+
+  <main class="admin-container">
+    <section class="admin-card">
+      <h2>Gestão de Produtos</h2>
+      <form id="form-produto">
+        <input type="text" id="nomeProduto" placeholder="Nome do produto" required>
+        <input type="number" id="precoProduto" placeholder="Preço (R$)" required>
+        <select id="categoriaProduto" required>
+          <option value="">Selecione a categoria</option>
+          <option value="roupa">Roupa</option>
+          <option value="acessorio">Acessório</option>
+        </select>
+        <button type="submit">Adicionar Produto</button>
+      </form>
+      <ul id="listaProdutos"></ul>
+    </section>
+
+    <section class="admin-card">
+      <h2>Gestão de Pedidos</h2>
+      <ul id="listaPedidos">
+        <li>Nenhum pedido registrado ainda.</li>
+      </ul>
+    </section>
+
+    <section class="admin-card">
+      <h2>Relatórios</h2>
+      <p>Total de produtos: <strong id="totalProdutos">0</strong></p>
+      <p>Total de pedidos: <strong id="totalPedidos">0</strong></p>
+      <p>Vendas totais: R$ <strong id="totalVendas">0,00</strong></p>
+      <button onclick="gerarRelatorio()">🔍 Atualizar Relatório</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Loja Infantil - Painel Administrativo</p>
+  </footer>
+</body>
+</html>
